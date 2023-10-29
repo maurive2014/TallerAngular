@@ -1,0 +1,23 @@
+<table class="table">
+  <thead>
+      <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Channel</th>
+          <th>Seasons</th>
+      </tr>
+  </thead>
+  <tbody id="series">
+
+      <tr *ngFor = "let serie of series">
+        <td><strong>{{serie.id}}</strong></td>
+        <td style="color:blue;">{{serie.name}}</td>
+        <td>{{serie.channel}}</td>
+        <td>{{serie.seasons}}</td>
+      </tr>
+
+  </tbody>
+</table>
+<div class="row content-end">
+  <div class="d-flex justify-content-start">Seasons average: {{average}}</div>
+</div>
